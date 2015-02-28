@@ -44,6 +44,7 @@ var app = {
         display.innerHTML += (db.adapter ? '&#10003; PouchDB is working.<br/>' : '&#10007; PouchDB is not working.<br/>');
         display.innerHTML += (idb.adapter ? '&#10003; IndexedDB is supported.<br/>' : '&#10007; IndexedDB is not supported.<br/>');
         display.innerHTML += (websql.adapter ? '&#10003; WebSQL is supported.<br/>' : '&#10007; WebSQL is not supported.<br/>');
+        display.innerHTML += '&#10003; User agent='+window.navigator.userAgent+'<br/>';
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
